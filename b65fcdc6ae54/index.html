@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f1a2c">
+<title>ZENVEX trading: can we make money importing to the UAE?</title>
+<style>
+:root{
+  --navy:#0f1a2c;--navy2:#15243c;--navy3:#1d2f4d;--line:#2b3f60;
+  --orange:#FF6B2C;--green:#1f9d62;--red:#d64545;--amber:#e0a526;
+  --cream:#f5f2ec;--ink:#0f1a2c;--mute:#93a1b8;--mute-d:#5b6577;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:"Avenir Next","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}
+body{background:var(--navy);color:#e9eef7;font-family:var(--sans);font-size:17px;line-height:1.5;overflow-x:hidden}
+button,input,select{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums}
+/* HUD */
+#bar{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--orange);transform-origin:0 50%;transform:scaleX(0);z-index:50}
+#hud{position:fixed;left:12px;top:12px;z-index:40;background:rgba(15,26,44,.92);border:1px solid var(--line);color:#fff;border-radius:99px;padding:6px 12px;font:600 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;pointer-events:none;opacity:0;transition:opacity .3s}
+#hud.on{opacity:1}
+#hud b{color:var(--orange)}
+#dots{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:2px}
+#dots a{display:block;width:44px;height:22px;position:relative}
+#dots a::after{content:"";position:absolute;right:6px;top:8px;width:8px;height:8px;border-radius:50%;background:#4a5d7e;transition:.25s}
+#dots a.on::after{background:var(--orange);transform:scale(1.4)}
+@media(min-width:1000px){#dots{display:flex}}
+/* sections */
+section.ch{position:relative}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.kick{font:600 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+h1,h2{font-family:var(--serif);font-weight:700;letter-spacing:-.015em;line-height:1.08}
+h1{font-size:clamp(38px,9vw,84px)}
+h2{font-size:clamp(30px,6.4vw,54px)}
+.lead{font-size:clamp(18px,2.6vw,22px);color:#c6d0e0;max-width:34em;margin-top:16px}
+.lt{background:var(--cream);color:var(--ink)}
+.lt .lead{color:#3d4a60}
+.lt .kick{color:#d9501a}
+.alt{background:var(--navy2)}
+.pad{padding:84px 0}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.mono{font-family:var(--mono)}
+.tag{display:inline-block;font:700 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:6px 8px;border-radius:4px;border:1px solid}
+.tag.g{color:#52d695;border-color:#1f9d62;background:rgba(31,157,98,.12)}
+.tag.r{color:#ff8a8a;border-color:#d64545;background:rgba(214,69,69,.12)}
+.tag.a{color:#f2c24f;border-color:#b98a16;background:rgba(224,165,38,.12)}
+.lt .tag.g{color:#13774a}.lt .tag.r{color:#b02f2f}.lt .tag.a{color:#8a6410}
+.foot{font:12px/1.5 var(--mono);color:var(--mute)}
+.lt .foot{color:var(--mute-d)}
+/* hero */
+#c0{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:90px 22px 60px;position:relative}
+#c0 .meta{font:12px/1.6 var(--mono);color:var(--mute);margin-bottom:28px;letter-spacing:.04em}
+.cue{margin-top:40px;font:12px var(--mono);color:var(--mute);display:flex;align-items:center;gap:10px}
+.cue i{display:block;width:1px;height:34px;background:var(--orange);transform-origin:top;animation:cue 1.8s infinite}
+@keyframes cue{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+/* verdict rows */
+.vrows{margin-top:36px;border-top:1px solid var(--line)}
+.vrow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);position:relative}
+.vrow .t{font-size:17px}.vrow .t small{display:block;color:var(--mute);font-size:14px;margin-top:2px}
+.vrow .tag{opacity:.25;transform:scale(.9);transition:.5s cubic-bezier(.3,1.5,.5,1);transition-delay:calc(var(--i)*.35s + .3s);white-space:nowrap}
+.vrow.in .tag{opacity:1;transform:none}
+.vrow::before{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--c);transition:width .8s ease;transition-delay:calc(var(--i)*.35s + .3s)}
+.vrow.in::before{width:100%}
+.goal{margin-top:46px}
+.goal .tr{height:34px;background:var(--navy3);border-radius:4px;position:relative;overflow:hidden;margin:14px 0 8px}
+.goal .fl{position:absolute;left:10%;height:100%;width:0;background:var(--orange);transition:width 1.4s cubic-bezier(.2,.7,.2,1) .4s}
+.goal .fl2{position:absolute;left:10%;height:100%;width:0;background:rgba(255,107,44,.38);transition:width 1.4s cubic-bezier(.2,.7,.2,1) .4s}
+.goal.in .fl{width:4%}.goal.in .fl2{width:14%}
+.goal .ax{display:flex;justify-content:space-between;font:12px var(--mono);color:var(--mute)}
+.bigq{font-family:var(--serif);font-size:clamp(26px,5vw,40px);line-height:1.15}
+.bigq em{font-style:normal;color:var(--orange)}
+/* pinned scenes */
+.pin{position:relative}
+.stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;padding-top:44px}
+.stick .head{padding:8px 22px 0;max-width:1080px;margin:0 auto;width:100%}
+.stick .head h2{font-size:clamp(24px,5vw,40px)}
+.cap{position:relative;min-height:128px;padding:0 22px 22px;max-width:1080px;margin:0 auto;width:100%}
+.cap .c{position:absolute;left:22px;right:22px;top:0;opacity:0;transform:translateY(10px);transition:.45s;pointer-events:none}
+.cap .c.on{opacity:1;transform:none}
+.cap .c h3{font:700 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:8px}
+.cap .c p{font-size:16px;color:#d4dcea;line-height:1.45}
+.lt .cap .c p{color:#2c3950}
+.stepdots{display:flex;gap:5px;max-width:1080px;margin:0 auto;padding:0 22px 10px;width:100%}
+.stepdots i{flex:1;height:3px;background:var(--line);border-radius:2px;position:relative;overflow:hidden}
+.stepdots i::after{content:"";position:absolute;inset:0;background:var(--orange);transform:scaleX(var(--f,0));transform-origin:0 50%}
+.lt .stepdots i{background:#d6d1c6}
+#routeSvg{flex:1;min-height:0;width:100%;max-width:560px;margin:0 auto;display:block}
+.stage{flex:1;min-height:0;display:flex;flex-direction:column}
+@media(min-width:900px){
+  .twocol .stick{display:grid;grid-template-columns:minmax(300px,420px) 1fr;grid-template-rows:1fr;column-gap:48px;max-width:1180px;margin:0 auto;padding:60px 22px 28px;align-items:center}
+  .twocol .stick .lhs{display:flex;flex-direction:column;gap:18px}
+  .twocol .stick .head,.twocol .cap,.twocol .stepdots{padding:0;max-width:none}
+  .twocol .cap{min-height:190px}.twocol .cap .c{left:0;right:0}
+  .twocol .stage{height:100%}
+}
+@media(max-width:899px){.lhs{display:contents}
+ .stick .head h2{font-size:23px}.stick .head .kick{margin-bottom:4px!important}
+ .cap{min-height:104px;margin-top:10px}.cap .c p{font-size:15px;line-height:1.38}.cap .c h3{margin-bottom:5px}
+ .chip{padding:0 11px;font-size:13px}
+ .res{padding:44px 16px 12px}.res .gauge{width:92px}.res .m{font-size:38px}.res .two{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+ .res .two div:nth-child(4){display:none}.res .two b{font-size:14px}.res .legend{display:none}.res .stackbar{margin-top:8px;height:10px}
+ .res .two small{font-size:9px}}
+/* svg text */
+svg text{font-family:var(--sans)}
+.sv-l{font-size:11px;fill:#cdd7e8}.sv-b{font-size:12px;font-weight:700;fill:#fff}.sv-s{font-size:10px;fill:#93a1b8}
+.node{fill:var(--navy3);stroke:var(--line);stroke-width:1.2}
+.flow{fill:none;stroke:var(--orange);stroke-width:2.4;stroke-linecap:round}
+.flow.d{stroke-dasharray:4 5}
+.flow.m{stroke:#35c07f}
+.pulse{animation:pl 1.6s ease-in-out infinite}
+@keyframes pl{0%,100%{stroke-opacity:1}50%{stroke-opacity:.25}}
+/* cost scene */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:44px;padding:0 14px;border-radius:99px;border:1px solid #b9b3a6;background:transparent;cursor:pointer;font-size:14px;font-weight:600;color:#2c3950}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip small{font:12px var(--mono);margin-left:6px;opacity:.8}
+.dk .chip{border-color:var(--line);color:#c9d3e4}
+.dk .chip.on{background:var(--orange);border-color:var(--orange);color:#10192a}
+.wf{padding:0 22px;max-width:760px;margin:0 auto;width:100%}
+.wfr{display:grid;grid-template-columns:132px 1fr 66px;gap:8px;align-items:center;height:35px;opacity:.14;transition:opacity .4s}
+.wfr.on{opacity:1}
+.wfr .l{font-size:13px;line-height:1.15;color:#2c3950}
+.wfr .tk{position:relative;height:20px;background:rgba(15,26,44,.06);border-radius:2px}
+.wfr .bb{position:absolute;top:0;bottom:0;border-radius:2px;width:0}
+.wfr .v{font:600 13px var(--mono);text-align:right}
+.wfr.net .l{font-weight:700}
+.wfr.net .v{font-size:15px}
+.mark{position:absolute;top:-6px;bottom:-6px;border-left:2px dashed var(--ink);z-index:2}
+.markl{position:absolute;top:-20px;font:700 10px var(--mono);transform:translateX(-100%);padding-right:4px;color:var(--ink);white-space:nowrap}
+.stat{font-family:var(--serif);font-size:clamp(40px,10vw,64px);font-weight:700;line-height:1}
+/* gates & bars */
+.gl{display:grid;grid-template-columns:1fr;gap:10px;margin-top:30px}
+.gate{display:grid;grid-template-columns:34px 1fr 62px;gap:10px;align-items:center;background:var(--navy3);border:1px solid var(--line);border-radius:8px;padding:12px;transition:.5s;transition-delay:calc(var(--i)*.25s)}
+.gate .lamp{width:26px;height:26px;border-radius:50%;background:#33466a;transition:.5s;transition-delay:calc(var(--i)*.25s + .6s)}
+.gate.in.g{border-color:#1f9d62}.gate.in.g .lamp{background:#35c07f;box-shadow:0 0 0 5px rgba(53,192,127,.18)}
+.gate.in.a{border-color:#b98a16}.gate.in.a .lamp{background:var(--amber);box-shadow:0 0 0 5px rgba(224,165,38,.18)}
+.gate.in.r{border-color:#d64545}.gate.in.r .lamp{background:#e55d5d;box-shadow:0 0 0 5px rgba(229,93,93,.18)}
+.gate.in.n .lamp{background:#6e7f9c}
+.gate .tt b{display:block;font-size:15px}.gate .tt small{color:var(--mute);font-size:13px;line-height:1.3;display:block;margin-top:2px}
+.gate .pc{font:700 17px var(--mono);text-align:right}
+.mbar{height:6px;background:#0e1829;border-radius:3px;margin-top:8px;position:relative;overflow:visible}
+.mbar i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i)*.25s + .2s)}
+.mbar u{position:absolute;top:-4px;bottom:-4px;border-left:2px solid #fff;opacity:.7}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.seg button{min-height:44px;padding:0 16px;background:none;border:0;cursor:pointer;font-weight:600;font-size:14px;color:#c9d3e4}
+.seg button.on{background:var(--orange);color:#10192a}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.cases>div{background:var(--navy3);border:1px solid var(--line);border-radius:8px;padding:16px}
+.cases .k{font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.cases .n{font-family:var(--serif);font-size:clamp(28px,7vw,44px);font-weight:700;line-height:1.1;margin-top:6px}
+.cases .n.o{color:var(--orange)}
+/* timeline vertical */
+.tl{position:relative;margin-top:34px;padding-left:34px}
+.tl .ln{position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl .ln i{position:absolute;left:0;top:0;width:100%;background:var(--orange);height:var(--h,0%)}
+.tl .st{position:relative;padding:0 0 22px;opacity:.3;transition:.5s}
+.tl .st.in{opacity:1}
+.tl .st::before{content:"";position:absolute;left:-30px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--navy);border:2px solid var(--line);transition:.4s}
+.tl .st.in::before{border-color:var(--orange);background:var(--orange)}
+.tl .st b{display:block;font-size:17px}
+.tl .st span{color:var(--mute);font-size:15px}
+.rule{margin-top:6px;padding:14px 16px;background:var(--navy3);border-radius:8px;font-size:15px;color:#d4dcea}
+/* cash chart */
+.chart{width:100%;height:auto;display:block;margin-top:22px}
+.chart text{font-family:var(--mono);font-size:11px;fill:var(--mute)}
+.mrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.mc{flex:1 1 150px;background:var(--navy3);border:1px solid var(--line);border-radius:8px;padding:14px}
+.mc .k{font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.mc .n{font-family:var(--serif);font-size:32px;font-weight:700;margin-top:4px}
+/* products */
+.pb{display:grid;grid-template-columns:1fr;gap:6px;margin-top:26px}
+.pr{background:none;border:0;text-align:left;cursor:pointer;padding:8px 0;border-bottom:1px solid var(--line);width:100%}
+.pr .top{display:flex;justify-content:space-between;gap:10px;font-size:15px}
+.pr .top b{font:700 15px var(--mono)}
+.pr .tr{height:14px;background:#0e1829;margin-top:8px;border-radius:2px;position:relative}
+.pr .tr i{position:absolute;left:0;top:0;bottom:0;border-radius:2px;width:0;transition:width 1s cubic-bezier(.2,.7,.2,1),background .4s;transition-delay:calc(var(--i)*.09s)}
+.pr .tr u{position:absolute;top:-5px;bottom:-5px;border-left:2px dashed #fff;opacity:.8}
+.pdet{display:none;margin-top:10px;font-size:14px;color:#c4cfe2;line-height:1.5}
+.pr.open .pdet{display:block}
+.thr{font:12px var(--mono);color:var(--mute);margin-top:10px}
+.rej{margin-top:22px;border:1px solid var(--line);border-radius:8px}
+.rej summary{min-height:48px;padding:12px 14px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+.rej summary::after{content:"+";font:700 18px var(--mono);color:var(--orange)}
+.rej[open] summary::after{content:"-"}
+.rej ul{list-style:none;padding:0 14px 12px}
+.rej li{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line);font-size:14px;color:#c4cfe2}
+.rej li b{font-family:var(--mono)}
+/* risks */
+.fz{display:grid;grid-template-columns:1fr;gap:12px;margin-top:26px}
+.fzn{background:var(--navy3);border:2px solid var(--line);border-radius:10px;padding:16px;transition:.5s}
+.fzn b{display:block;font-size:17px}.fzn span{font-size:14px;color:var(--mute);display:block;margin-top:4px}
+.fzn.g{border-color:#1f9d62;background:#10301f}.fzn.r{border-color:#d64545;background:#351a1d}.fzn.a{border-color:#b98a16}
+.fzarrow{height:20px;position:relative;margin:-4px 0}
+.fzarrow::after{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:2px dashed var(--line)}
+@media(min-width:760px){.fz{grid-template-columns:1fr 1fr;align-items:stretch}.fzarrow{display:none}.fz .full{grid-column:1/-1}}
+.risks{margin-top:34px;border-top:1px solid var(--line)}
+.risks details{border-bottom:1px solid var(--line)}
+.risks summary{list-style:none;cursor:pointer;min-height:56px;padding:10px 0;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.risks summary b{font-size:16px;font-weight:600}
+.risks summary small{display:block;color:var(--mute);font:11px var(--mono);margin-top:3px}
+.risks .lv{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:4px}
+.risks p{padding:0 0 14px;color:#c4cfe2;font-size:15px}
+/* gantt */
+.gt{margin-top:30px}
+.gtax{position:relative;height:22px;margin-left:0;font:11px var(--mono);color:var(--mute)}
+.gtax span{position:absolute;transform:translateX(-50%)}
+.gtr{padding:8px 0 4px}
+.gtr .l{font-size:13px;color:#c9d3e4;line-height:1.2;margin-bottom:5px;display:block}
+.gtr .tk{height:14px;position:relative;background:repeating-linear-gradient(90deg,transparent 0 calc(5% - 1px),#22344f calc(5% - 1px) 5%);border-radius:2px}
+.gtr .b{position:absolute;top:1px;bottom:1px;border-radius:3px;width:0;transition:width .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--dl,0s)}
+.gtr .dm{position:absolute;top:-1px;width:16px;height:16px;background:var(--amber);transform:translateX(-50%) rotate(45deg) scale(0);transition:transform .4s cubic-bezier(.3,1.6,.5,1);transition-delay:calc(var(--dl,0s) + .8s)}
+.gt.in .dm{transform:translateX(-50%) rotate(45deg) scale(.62)}
+.vl{position:absolute;top:-6px;bottom:-6px;border-left:1px dashed var(--orange);z-index:1}
+.vlab{position:absolute;font:600 10px var(--mono);color:var(--orange);white-space:nowrap}
+.leg{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:#c9d3e4}
+.leg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.who{display:grid;gap:10px;margin-top:26px}
+.who div{background:var(--navy3);border:1px solid var(--line);border-radius:8px;padding:14px;font-size:15px;color:#d4dcea}
+.who b{display:block;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+@media(min-width:760px){.who{grid-template-columns:repeat(3,1fr)}}
+/* calculator */
+#calc{background:var(--cream);color:var(--ink)}
+.cgrid{display:grid;gap:22px;margin-top:28px}
+@media(min-width:900px){.cgrid{grid-template-columns:420px 1fr;align-items:start}}
+.res{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;border-radius:0 0 14px 14px;padding:56px 16px 14px;margin:0 -22px}
+@media(min-width:900px){.res{top:60px;border-radius:14px;padding:18px;margin:0}}
+.res .gz{display:flex;align-items:center;gap:14px}
+.gauge{width:132px;flex:none}
+.res .m{font-family:var(--serif);font-size:46px;font-weight:700;line-height:1}
+.res .vd{margin-top:6px}
+.res .two{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.res .two div{background:#1a2a45;border-radius:8px;padding:8px 10px}
+.res .two small{display:block;font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#93a1b8}
+.res .two b{font:700 18px var(--mono)}
+.stackbar{height:16px;border-radius:3px;overflow:hidden;display:flex;margin-top:12px;background:#243653;position:relative}
+.stackbar div{height:100%;transition:width .5s}
+.ctrl{background:#fff;border:1px solid #ddd6c8;border-radius:12px;padding:6px 16px 12px}
+.ctrl .f{padding:12px 0;border-bottom:1px solid #eee8dc}
+.ctrl .f:last-child{border:0}
+.ctrl label{display:flex;justify-content:space-between;font-size:15px;font-weight:600}
+.ctrl label output{font:700 15px var(--mono);color:#d9501a}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;cursor:pointer;touch-action:pan-y}
+input[type=range]::-webkit-slider-runnable-track{height:6px;background:#d9d3c5;border-radius:3px}
+input[type=range]::-moz-range-track{height:6px;background:#d9d3c5;border-radius:3px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--orange);border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);margin-top:-11px}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--orange);border:3px solid #fff}
+.ctrl select{width:100%;min-height:44px;border:1px solid #cfc8b8;border-radius:8px;padding:0 10px;background:#fff;margin-top:6px;color:var(--ink)}
+.ctrl .seg{border-color:#cfc8b8;margin-top:6px}
+.ctrl .seg button{color:var(--ink)}
+.ctrl .seg button.on{background:var(--ink);color:#fff}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.more div{background:#fff;border:1px solid #ddd6c8;border-radius:10px;padding:12px}
+.more small{display:block;font:11px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--mute-d)}
+.more b{font:700 20px var(--mono);display:block;margin-top:2px}
+.more i{font:12px/1.3 var(--sans);font-style:normal;color:var(--mute-d);display:block;margin-top:2px}
+.warn{color:#b02f2f;font-weight:600;font-size:14px;margin-top:10px;min-height:0}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:10px;font-size:12px;color:#c9d3e4}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+/* decision */
+.ask{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:22px 0;border-top:1px solid var(--line)}
+.ask .no{width:44px;height:44px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;font:700 16px var(--mono);transition:.5s;transition-delay:calc(var(--i)*.4s)}
+.ask.in .no{background:var(--orange);border-color:var(--orange);color:#10192a}
+.ask b{font-family:var(--serif);font-size:clamp(20px,4.4vw,28px);display:block;line-height:1.2}
+.ask span{display:block;color:var(--mute);font-size:15px;margin-top:6px}
+.bottom{margin-top:36px;padding:22px;background:var(--navy3);border-radius:10px;font-family:var(--serif);font-size:clamp(20px,4vw,26px);line-height:1.3}
+.bottom em{color:var(--orange);font-style:normal}
+.gloss{margin-top:40px;color:var(--mute);font:12px/1.7 var(--mono)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;transition-delay:0s!important;animation:none!important}
+  .rv{opacity:1;transform:none}
+}
+
+.gate .mbar i{width:0}.gate.in .mbar i{width:var(--w)}
+.wfr .tk::after{content:"";position:absolute;left:var(--mk,100%);top:-3px;bottom:-3px;border-left:2px dashed rgba(15,26,44,.55)}
+.wfr .tk .bb{transition:none}
+@media(max-width:899px){
+ .res{padding:44px 16px 12px}.res .gauge{width:92px}.res .m{font-size:38px}.res .two{grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+ .res .two div:nth-child(4){display:none}.res .two b{font-size:14px}.res .legend{display:none}.res .stackbar{margin-top:8px;height:10px}.res .two small{font-size:9px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div id="hud"><b id="hn">01</b> / 10 <span id="ht">The question</span></div>
+<nav id="dots" aria-label="Chapters"></nav>
+
+<!-- 1 THE QUESTION -->
+<section class="ch" id="c1" data-t="The question">
+  <div class="wrap" id="c0">
+    <div class="meta rv">ZENVEX GLOBAL LLC | Trading feasibility study | 16 Nov 2026</div>
+    <div class="kick rv" style="--d:.1s">01 The question</div>
+    <h1 class="rv" style="--d:.15s">Can we make money importing to the UAE?</h1>
+    <p class="lead rv" style="--d:.3s">We costed every fee, from the supplier in India or China to the customer's door in the UAE. Here is the answer, then the proof, one scroll at a time.</p>
+    <div class="cue rv" style="--d:.5s"><i></i>Scroll</div>
+  </div>
+  <div class="wrap pad" style="padding-top:20px">
+    <div class="bigq rv">Short answer: <em>yes, in stages.</em> Not a full GO yet.</div>
+    <div class="vrows" id="vrows">
+      <div class="vrow" style="--i:0;--c:#1f9d62"><div class="t">Engine 1: B2B supply to the partner's customers<small>Only against a purchase order with a 30 to 50% deposit</small></div><span class="tag g">Go</span></div>
+      <div class="vrow" style="--i:1;--c:#e0a526"><div class="t">Engine 2: Amazon.ae India air test<small>Paid learning. Only after the free zone answer and quotes</small></div><span class="tag a">Test</span></div>
+      <div class="vrow" style="--i:2;--c:#d64545"><div class="t">China commodity under AED 90<small>Keep China for B2B sourcing and one hero test</small></div><span class="tag r">No-go</span></div>
+      <div class="vrow" style="--i:3;--c:#d64545"><div class="t">Hypermarkets in year 1, Noon for now<small>Noon waits until its fees and inbound rules are read</small></div><span class="tag r">No-go</span></div>
+      <div class="vrow" style="--i:4;--c:#d64545"><div class="t">AED 50,000 a month from trading alone, inside 12 months<small>The goal the partner asked about</small></div><span class="tag r">Not credible</span></div>
+    </div>
+    <div class="goal" id="goal">
+      <div class="mono" style="font-size:12px;color:var(--mute);letter-spacing:.08em;text-transform:uppercase">Monthly profit by month 12, at best</div>
+      <div class="tr"><div class="fl2"></div><div class="fl"></div></div>
+      <div class="ax"><span>AED 0</span><span>AED 50,000 goal</span></div>
+      <p style="margin-top:14px;font-size:18px">Trading adds <b class="num" style="color:var(--orange)">AED <span class="cnt" data-to="5000" data-dec="0">0</span> to <span class="cnt" data-to="12000" data-dec="0">0</span></b> a month by month 12 at best. Consulting has to carry the rest.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 THE ROUTE -->
+<section class="ch twocol" id="c2" data-t="The route">
+  <div class="pin" id="pinRoute" style="height:560vh">
+    <div class="stick">
+      <div class="lhs">
+        <div class="head"><div class="kick" style="margin-bottom:8px">02 The route</div><h2>From a factory to a customer</h2></div>
+        <div class="cap" id="capRoute"></div>
+        <div class="stepdots" id="sdRoute"></div>
+      </div>
+      <div class="stage">
+      <svg id="routeSvg" viewBox="0 0 380 590" role="img" aria-label="Animated route from India and China by air or sea through UAE customs to Amazon FBA, noon FBN or a 3PL, then to the customer and back as money">
+        <!-- origins -->
+        <g data-a="0" data-b=".08">
+          <rect class="node" x="20" y="8" width="150" height="58" rx="6"/>
+          <text class="sv-b" x="34" y="29">INDIA</text><text class="sv-s" x="34" y="44">duty 5%, 0% with CEPA</text><text class="sv-s" x="34" y="57">certificate</text>
+          <rect class="node" x="210" y="8" width="150" height="58" rx="6"/>
+          <text class="sv-b" x="224" y="29">CHINA</text><text class="sv-s" x="224" y="44">duty 5%</text><text class="sv-s" x="224" y="57">B2B sourcing, one hero test</text>
+        </g>
+        <path id="p1" class="flow" data-a=".06" data-b=".16" d="M95 66 V92"/>
+        <path id="p2" class="flow" data-a=".06" data-b=".16" d="M285 66 V92"/>
+        <g data-a=".14" data-b=".22">
+          <rect class="node" x="40" y="92" width="110" height="34" rx="17"/>
+          <path d="M62 109 l16 -2 l-4 -7 l3 0 l8 7 l9 0 l0 3 l-9 0 l-8 7 l-3 0 l4 -7z" fill="#FF6B2C"/>
+          <text class="sv-b" x="104" y="113">By air</text>
+          <rect class="node" x="230" y="92" width="110" height="34" rx="17"/>
+          <path d="M250 112 h22 l-3 6 h-16z M256 112 v-6 h7 v6 M266 108 h3 v4" fill="#FF6B2C"/>
+          <text class="sv-b" x="284" y="113">By sea</text>
+        </g>
+        <path id="p3" class="flow" data-a=".2" data-b=".34" d="M95 126 C95 160 190 150 190 178"/>
+        <path id="p4" class="flow" data-a=".2" data-b=".34" d="M285 126 C285 160 190 150 190 178"/>
+        <g data-a=".32" data-b=".42">
+          <rect class="node" x="40" y="178" width="300" height="74" rx="8" style="stroke:#FF6B2C"/>
+          <text class="sv-b" x="56" y="199">UAE CUSTOMS</text><text class="sv-s" x="148" y="199">every shipment is a mainland import</text>
+          <g data-a=".4" data-b=".48">
+          <rect x="56" y="210" width="62" height="22" rx="4" fill="#243653"/><text class="sv-l" x="64" y="225">duty 5%</text>
+          <rect x="124" y="210" width="86" height="22" rx="4" fill="#243653"/><text class="sv-l" x="132" y="225">import VAT 5%</text>
+          <rect x="216" y="210" width="112" height="22" rx="4" fill="#243653"/><text class="sv-l" x="224" y="225">~AED 560 a shipment</text>
+          </g>
+          <text class="sv-s" x="56" y="245">plus AED 500 airport charges on air freight</text>
+        </g>
+        <g data-a=".5" data-b=".6">
+          <rect class="node pulse" x="40" y="262" width="300" height="46" rx="8" style="stroke:#e0a526;stroke-width:2"/>
+          <text class="sv-b" x="56" y="281" style="fill:#f2c24f">CONDITION BEFORE MONEY MOVES</text>
+          <text class="sv-l" x="56" y="298">Written answer: may ZENVEX import in its own name?</text>
+        </g>
+        <path id="p5" class="flow" data-a=".6" data-b=".7" d="M72 308 V340"/>
+        <path id="p6" class="flow" data-a=".6" data-b=".7" d="M190 308 V340"/>
+        <path id="p7" class="flow" data-a=".6" data-b=".7" d="M308 308 V340"/>
+        <g data-a=".66" data-b=".76">
+          <rect class="node" x="24" y="340" width="96" height="84" rx="8" style="stroke:#35c07f"/>
+          <text class="sv-b" x="34" y="360">AMAZON</text><text class="sv-b" x="34" y="374">FBA</text><text class="sv-s" x="34" y="390">mainland FC</text><text class="sv-s" x="34" y="414" style="fill:#52d695;font-weight:700">USE for test</text>
+        </g>
+        <g data-a=".7" data-b=".8">
+          <rect class="node" x="142" y="340" width="96" height="84" rx="8"/>
+          <text class="sv-b" x="152" y="360">NOON</text><text class="sv-b" x="152" y="374">FBN</text><text class="sv-s" x="152" y="390">read inbound</text><text class="sv-s" x="152" y="402">rules first</text><text class="sv-s" x="152" y="414" style="fill:#f2c24f;font-weight:700">PARKED</text>
+        </g>
+        <g data-a=".74" data-b=".84">
+          <rect class="node" x="260" y="340" width="96" height="84" rx="8"/>
+          <text class="sv-b" x="270" y="360">3PL</text><text class="sv-s" x="270" y="376">one stock,</text><text class="sv-s" x="270" y="388">all sites</text><text class="sv-s" x="270" y="402">AED 85/cbm</text><text class="sv-s" x="270" y="414">a month</text>
+        </g>
+        <path id="p8" class="flow d" data-a=".84" data-b=".92" d="M40 215 H10 V478 H24"/>
+        <path id="p9" class="flow" data-a=".86" data-b=".94" d="M72 424 C72 450 278 440 278 466"/>
+        <path id="p10" class="flow" data-a=".86" data-b=".94" d="M190 424 C190 450 278 440 278 466"/>
+        <path id="p11" class="flow" data-a=".86" data-b=".94" d="M308 424 C308 450 278 440 278 466"/>
+        <g data-a=".88" data-b=".95">
+          <rect class="node" x="24" y="466" width="156" height="46" rx="8" style="stroke-dasharray:4 4"/>
+          <text class="sv-b" x="36" y="485">B2B BUYER</text><text class="sv-s" x="36" y="501">Engine 1: no warehouse</text>
+          <rect class="node" x="200" y="466" width="156" height="46" rx="8"/>
+          <text class="sv-b" x="212" y="485">CUSTOMER</text><text class="sv-s" x="212" y="501">Amazon or other channel</text>
+        </g>
+        <path id="p12" class="flow m" data-a=".93" data-b="1" d="M102 512 V530 H190 V548 M278 512 V530 H190"/>
+        <g data-a=".95" data-b="1">
+          <rect class="node" x="90" y="548" width="200" height="34" rx="8" style="stroke:#35c07f"/>
+          <text class="sv-b" x="190" y="569" text-anchor="middle" style="fill:#52d695">MONEY BACK TO ZENVEX</text>
+        </g>
+        <g id="parcels">
+          <circle class="pc" r="5" fill="#fff" data-path="p1" data-a=".06" data-b=".16" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p2" data-a=".06" data-b=".16" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p3" data-a=".2" data-b=".34" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p4" data-a=".2" data-b=".34" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p6" data-a=".62" data-b=".72" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p10" data-a=".86" data-b=".94" opacity="0"/>
+          <circle class="pc" r="5" fill="#fff" data-path="p8" data-a=".84" data-b=".92" opacity="0"/>
+          <circle class="pc" r="5" fill="#35c07f" data-path="p12" data-a=".93" data-b="1" opacity="0"/>
+        </g>
+      </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 WHERE THE MONEY GOES -->
+<section class="ch twocol lt" id="c3" data-t="Where the money goes">
+  <div class="pin" id="pinCost" style="height:520vh">
+    <div class="stick">
+      <div class="lhs">
+        <div class="head"><div class="kick" style="margin-bottom:8px">03 Where the money goes</div><h2>One sale of AED <span class="num" id="cPrice">34.99</span></h2>
+          <p style="font-size:15px;color:#3d4a60;margin-top:6px">Copper tongue scraper, 2-pack, per unit sold. Tap a case.</p></div>
+        <div class="head" style="padding-top:10px"><div class="chips" id="cChips"></div></div>
+        <div class="cap" id="capCost" style="min-height:110px"></div>
+      </div>
+      <div class="stage"><div class="wf" id="wf" style="margin-top:26px"></div>
+      <div class="stepdots" id="sdCost" style="margin-top:auto;padding-top:10px"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 ENGINE 1 -->
+<section class="ch alt pad" id="c4" data-t="Engine 1: B2B">
+  <div class="wrap">
+    <div class="kick rv">04 Engine 1</div>
+    <h2 class="rv">B2B supply: no stock without a purchase order</h2>
+    <p class="lead rv">The partner's industrial customers send an RFQ. We find the goods, quote, and ship only against a PO with a deposit. No marketplace fees, no ads.</p>
+    <div class="tl" id="tl1">
+      <div class="ln"><i></i></div>
+      <div class="st"><b>RFQ comes in</b><span>From a buyer the partner can reach. We ask for a redacted RFQ or PO first.</span></div>
+      <div class="st"><b>We source and quote</b><span>India, or China for some lines. Nobody has been contacted yet, so prices are public listings or ESTIMATES.</span></div>
+      <div class="st"><b>PO plus 30 to 50% deposit</b><span>The model uses 40%. No deposit, no order.</span></div>
+      <div class="st"><b>Supplier gets 30% at order, 70% before shipment</b><span>One consolidated sea LCL shipment of about 9.4 cbm carries all lines.</span></div>
+      <div class="st"><b>9 weeks from PO to delivery</b><span>Produce, sea LCL, clear, truck.</span></div>
+      <div class="st"><b>Buyer pays the balance 30 days after delivery</b><span>About 2.4 months from our first supplier payment to the final payment.</span></div>
+    </div>
+    <div class="rule rv">Rules: credit cap of one month of sales per buyer. Bad debt provision 1.5%. One late payment ends repeat credit.</div>
+
+    <h3 class="rv" style="font-family:var(--serif);font-size:clamp(24px,5vw,34px);margin-top:64px">Five product lines, five gates</h3>
+    <p class="lead rv" style="font-size:17px">Gross margin at the public UAE price. The gate is 13%.</p>
+    <div class="gl" id="gl1"></div>
+
+    <h3 class="rv" style="font-family:var(--serif);font-size:clamp(24px,5vw,34px);margin-top:64px">What the engine earns</h3>
+    <p class="lead rv" style="font-size:17px">All five lines at the price needed for 13%. Pick the number of buyers per line.</p>
+    <div class="seg rv" id="buyerSeg" style="margin-top:18px"></div>
+    <div class="cases" id="cases1"></div>
+    <div class="rule rv" style="margin-top:16px">If AED 100,000 of POs arrive each month at 13% gross: about <b class="mono" style="color:var(--orange)">AED 9,005</b> a month on <b class="mono">AED 131,354</b> of working capital. Needs real POs (ESTIMATE). One failed shipment costs about <b class="mono">AED 8,514</b>.</div>
+    <p class="foot rv" style="margin-top:14px">Every AED 1 of monthly sales ties up about AED 0.7 of working capital before profit. At 40% deposit, 9 weeks to deliver, 30 days credit.</p>
+  </div>
+</section>
+
+<!-- 5 ENGINE 2 -->
+<section class="ch pad" id="c5" data-t="Engine 2: Amazon test">
+  <div class="wrap">
+    <div class="kick rv">05 Engine 2</div>
+    <h2 class="rv">Amazon.ae test: we pay to learn</h2>
+    <p class="lead rv">Two India items by air, one shipment. It will most likely lose money. That is the price of finding out.</p>
+    <div class="mrow rv">
+      <div class="mc"><div class="k">Expected loss, all in</div><div class="n num" style="color:#ff8a8a">AED <span class="cnt" data-to="4439" data-dec="0">0</span> to <span class="cnt" data-to="5899" data-dec="0">0</span></div></div>
+      <div class="mc"><div class="k">Peak cash needed</div><div class="n num">AED <span class="cnt" data-to="7992" data-dec="0">0</span></div></div>
+    </div>
+    <svg class="chart" id="cashChart" viewBox="0 0 360 230" role="img" aria-label="Cumulative cash by month for the Amazon test"></svg>
+    <p class="foot rv">Cumulative cash, months M0 to M9, from the study's cash-flow table. Set-up AED 4,950 at M0 (licence amendment AED 2,200 is the biggest part, and Engine 1 needs it anyway). Air freight, duty and clearance AED 2,210 at M1. Amazon pays from M3.</p>
+    <h3 class="rv" style="font-family:var(--serif);font-size:clamp(24px,5vw,34px);margin-top:54px">Margin of the best product</h3>
+    <div class="gl" id="gl2" style="margin-top:18px"></div>
+    <div class="rule rv" style="margin-top:20px">The air test fails the 20% rule by design. It passes on paper by sea only, with three gates still open: category, supplier quote, test report. At day 60 we decide on the single hero test (300 units, about AED 15,000).</div>
+  </div>
+</section>
+
+<!-- 6 PRODUCTS -->
+<section class="ch alt pad" id="c6" data-t="Products that pass">
+  <div class="wrap">
+    <div class="kick rv">06 Products</div>
+    <h2 class="rv">Products that pass</h2>
+    <p class="lead rv">Net margin per unit after every cost, from the wider shortlist. Only 5 clear 25% by sea. Tap a bar for the numbers.</p>
+    <div class="seg rv" id="modeSeg" style="margin-top:20px"><button class="on" data-m="sea">By sea</button><button data-m="air">By air</button></div>
+    <div class="pb" id="pb"></div>
+    <div class="thr">Dashed line = 25% net. Green passes, amber is borderline, red fails.</div>
+    <details class="rej"><summary>11 more were modelled and rejected</summary><ul id="rejL"></ul></details>
+    <p class="foot" style="margin-top:18px">UNVALIDATED: supplier prices are mostly ESTIMATES from public listings (Alibaba, Made-in-China, IndiaMART). Quotes and samples (about AED 300 to 500) come first. Run one joint shipment so the AED 560 clearing is shared.</p>
+  </div>
+</section>
+
+<!-- 7 RISKS -->
+<section class="ch pad" id="c7" data-t="Risks">
+  <div class="wrap">
+    <div class="kick rv">07 Risks</div>
+    <h2 class="rv">One condition decides Engine 2</h2>
+    <p class="lead rv">ZENVEX is a Sharjah free zone company. Amazon fulfilment centres are on the mainland. We need one written answer from Shams and Sharjah Customs. Try both answers.</p>
+    <div class="seg rv" id="fzSeg" style="margin-top:20px"><button data-v="1">Answer: yes</button><button data-v="0">Answer: no</button></div>
+    <div class="fz" id="fz">
+      <div class="fzn full a" id="fzq"><b>May ZENVEX import in its own name and deliver to a mainland FC?</b><span>Cost of the answer: one phone call. Alternative if no: a mainland distributor invoice.</span></div>
+      <div class="fzn" id="fz2"><b>Engine 2: Amazon test</b><span id="fz2t">Waiting for the answer</span></div>
+      <div class="fzn" id="fz1"><b>Engine 1: B2B supply</b><span id="fz1t">Not affected if the buyer or the clearing agent is the importer</span></div>
+    </div>
+    <h3 class="rv" style="font-family:var(--serif);font-size:clamp(24px,5vw,34px);margin-top:60px">The other risks</h3>
+    <div class="risks" id="risks"></div>
+  </div>
+</section>
+
+<!-- 8 PLAN -->
+<section class="ch alt pad" id="c8" data-t="The plan">
+  <div class="wrap">
+    <div class="kick rv">08 The plan</div>
+    <h2 class="rv">20 weeks, with gates</h2>
+    <p class="lead rv">Week 1 is the week of 16 Nov 2026. Engine 1 runs first. Amazon starts only after the written free zone answer and three quotes. Nothing is bought or contacted until the owner says send.</p>
+    <div class="gt" id="gt"></div>
+    <div class="leg"><span><i style="background:#FF6B2C"></i>Owner (India)</span><span><i style="background:#3b78e0"></i>Partner (UAE)</span><span><i style="background:#1f9d62"></i>AI team</span><span><i style="background:#c9d3e4"></i>Joint</span><span><i style="background:#e0a526;transform:rotate(45deg) scale(.8)"></i>Decision gate</span></div>
+    <div class="who">
+      <div><b style="color:#FF6B2C">Owner (India)</b>Quotes and samples from 2 suppliers per SKU, production, packing, export papers, freight booking.</div>
+      <div><b style="color:#6fa3f5">Partner (UAE)</b>Licence amendment, written answers, customs code, clearing agent, trucking, B2B pitches.</div>
+      <div><b style="color:#35c07f">AI team</b>Fee previews, listings, cost model updates, ad plans, weekly report, quote comparison.</div>
+    </div>
+    <p class="foot" style="margin-top:18px">Stock is buyable around week 11 (late January 2027), before Ramadan (expected 8 Feb 2027). The Amazon test slips if the free zone answer is late. For gifting, POs and deposits must be signed by about 10 Dec 2026 or skip it.</p>
+  </div>
+</section>
+
+<!-- 9 CALCULATOR -->
+<section class="ch pad lt" id="c9" data-t="Calculator">
+  <div class="wrap">
+    <div class="kick rv">09 Try it</div>
+    <h2 class="rv">Your numbers, our cost model</h2>
+    <p class="lead rv">Same engine as the study's calculator. Move a slider, watch the margin. Shipment shared by 2 SKUs by air or 4 by sea, as in the study.</p>
+    <div class="cgrid">
+      <div class="res" id="res">
+        <div class="gz">
+          <svg class="gauge" viewBox="0 0 140 84" aria-hidden="true">
+            <path d="M14 76 A56 56 0 0 1 126 76" fill="none" stroke="#243653" stroke-width="12" stroke-linecap="round"/>
+            <path id="gArc" d="M14 76 A56 56 0 0 1 126 76" fill="none" stroke="#FF6B2C" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" style="transition:stroke-dashoffset .6s,stroke .4s"/>
+            <line id="gTick" x1="0" y1="0" x2="0" y2="0" stroke="#fff" stroke-width="2"/>
+          </svg>
+          <div><div class="m num" id="rM">0.0%</div><div class="vd"><span class="tag a" id="rV">Marginal</span></div></div>
+        </div>
+        <div class="two">
+          <div><small>Net per unit</small><b id="rN">AED 0.00</b></div>
+          <div><small>Landed per unit</small><b id="rL">AED 0.00</b></div>
+          <div><small>Whole batch net</small><b id="rB">AED 0</b></div>
+          <div><small>Cash in stock</small><b id="rC">AED 0</b></div>
+        </div>
+        <div class="stackbar" id="sb" aria-hidden="true"></div>
+        <div class="legend" id="lg"></div>
+      </div>
+      <div>
+        <div class="ctrl" id="ctrl">
+          <div class="f"><label for="iPre">Starting product</label><select id="iPre"></select></div>
+          <div class="f"><label for="iBuy">Buy price <output id="oBuy"></output></label><input id="iBuy" type="range"></div>
+          <div class="f"><label for="iPrice">Sell price <output id="oPrice"></output></label><input id="iPrice" type="range" min="10" max="150" step="0.01"></div>
+          <div class="f"><label for="iWt">Weight per unit <output id="oWt"></output></label><input id="iWt" type="range" min="0.02" max="2" step="0.005"></div>
+          <div class="f"><label for="iQty">Units ordered <output id="oQty"></output></label><input id="iQty" type="range" min="20" max="1000" step="10"></div>
+          <div class="f"><label>Freight</label><div class="seg" id="iMode"><button data-m="Air" class="on">Air</button><button data-m="Sea">Sea</button></div></div>
+          <div class="f"><label for="iSold">Sell-through <output id="oSold"></output></label><input id="iSold" type="range" min="10" max="100" step="1"></div>
+          <div class="f"><label for="iAds">Ads, share of sales <output id="oAds"></output></label><input id="iAds" type="range" min="0" max="60" step="1"></div>
+        </div>
+        <div class="warn" id="warn"></div>
+        <div class="more" id="more"></div>
+        <p class="foot" style="margin-top:16px">Rule: 20% net or more passes, 10 to 20% is marginal. Unsold stock sits 6 months and pays storage, long-term fees and removal. Air: 5% returns, sea: 8%. Dimensions come from the starting product. Prices are targets, not quotes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 DECISION -->
+<section class="ch pad" id="c10" data-t="The decision">
+  <div class="wrap">
+    <div class="kick rv">10 The decision</div>
+    <h2 class="rv">Three things we ask the partner</h2>
+    <div style="margin-top:30px" id="asks">
+      <div class="ask" style="--i:0"><div class="no">1</div><div><b>Back Engine 1</b><span>Name which of the ten buyer profiles you can reach. Get three redacted RFQs. No stock without a PO and a 30 to 50% deposit.</span></div></div>
+      <div class="ask" style="--i:1"><div class="no">2</div><div><b>Approve the one written question</b><span>To Shams and Sharjah Customs, plus the three quote requests. Nothing is sent without the owner saying send.</span></div></div>
+      <div class="ask" style="--i:2"><div class="no">3</div><div><b>Only then, approve the Amazon test</b><span>Peak cash about AED 7,992, expected loss AED 4,439 to AED 5,899. At day 60 decide on the single hero test.</span></div></div>
+    </div>
+    <div class="bottom rv">Honest bottom line: trading adds <em>AED 5,000 to 12,000</em> a month by month 12 at best. Consulting must carry the rest.</div>
+    <p class="gloss">Prices and fees read 16 Nov 2026. Amazon changes FBA fees on 1 Dec 2026 and all fees here already use the new table. ESTIMATE means our assumption: no supplier has been contacted and no written quote exists. Exchange rates: 25.57 INR per AED, 3.6725 AED per USD. Source: ZENVEX trading feasibility study, COST-MODEL.xlsx, products-v2.</p>
+  </div>
+</section>
+
+<script>
+const ASSUMP={"fx_inr": 25.5666, "usd_aed": 3.6725, "duty": 0.05, "cepa": 0.0, "vat": 0.05, "vat_reg": 0, "decl": 70, "kif": 20, "code_fee": 100, "agent_fee": 250, "coo_cost": 60, "deliver_fc": 220, "ins_pct": 0.005, "bank_fee": 50, "fx_margin": 0.005, "india_inland": 0.03, "pack_factor": 1.2, "vol_factor": 1.15, "air_min": 300, "air_small": 40, "air_tier_kg": 30, "air_dest": 500, "air_in": 28, "sea_in": 900, "sea_fixed": 880, "cn_air": 4.5, "cn_sea": 150, "cn_cfs": 60, "cn_agent": 0.08, "cn_qc": 268, "cn_inland": 0.015, "label": 0.4, "storage": 2.0, "ltsf1": 8.0, "ltsf2": 30.0, "rem1": 1.6, "rem2": 1.75, "rem3": 2.0, "rem4": 2.2, "admin_cap": 15, "admin_pct": 0.2, "plan_fee": 0, "gs1": 500, "testrep": 800, "acct": 400, "licence": 2200, "photo": 300, "sample_in": 150, "sample_cn": 100, "pl_pack": 0.4, "goal": 50000};
+const FBA=[["SmEnv_0.1", 5.5, 7.5, 8.5], ["StdEnv_0.1", 6.0, 8.0, 9.0], ["StdEnv_0.2", 6.2, 8.2, 9.2], ["StdEnv_0.5", 6.5, 8.5, 9.5], ["LgEnv_1", 7.0, 9.0, 10.0], ["Parcel_0.25", 7.2, 9.2, 10.2], ["Parcel_0.5", 7.5, 9.5, 10.5], ["Parcel_1", 8.5, 10.5, 11.5], ["Parcel_1.5", 9.0, 11.0, 12.0], ["Parcel_2", 9.5, 11.5, 13.5], ["Parcel_3", 10.5, 12.5, 14.5], ["Parcel_4", 11.5, 13.5, 15.5], ["Parcel_5", 12.5, 14.5, 16.5], ["Parcel_6", 13.5, 15.5, 18.5], ["Parcel_7", 14.5, 16.5, 19.5], ["Parcel_8", 15.5, 17.5, 20.5], ["Parcel_9", 16.5, 18.5, 21.5], ["Parcel_10", 17.5, 19.5, 22.5], ["Parcel_11", 18.5, 20.5, 23.5], ["Parcel_12", 19.5, 21.5, 24.5]];
+const SCEN=[{"name": "S1 Air test", "mode": "Air", "share": 2, "sold": 1.0, "store": 2, "unsold": 0, "ret": 0.05, "resell": 0.7, "acos": 0.15, "price_f": 1.0, "buy_f": 1.0, "salvage": 0.0}, {"name": "S2 Sea scale-up", "mode": "Sea", "share": 4, "sold": 0.9, "store": 4, "unsold": 6, "ret": 0.08, "resell": 0.7, "acos": 0.12, "price_f": 0.95, "buy_f": 1.0, "salvage": 0.0}, {"name": "S3 Worst case", "mode": "Air", "share": 2, "sold": 0.5, "store": 3, "unsold": 12, "ret": 0.15, "resell": 0.5, "acos": 0.25, "price_f": 0.9, "buy_f": 1.1, "salvage": 0.0}, {"name": "S4 Launch ads", "mode": "Air", "share": 2, "sold": 1.0, "store": 2, "unsold": 0, "ret": 0.05, "resell": 0.7, "acos": 0.35, "price_f": 1.0, "buy_f": 1.0, "salvage": 0.0}];
+function autoTier(wt,L,W,H){
+  const d=[L,W,H].sort((x,y)=>y-x), l=d[0], w=d[1], h=d[2];
+  if(l<=20&&w<=15&&h<=1&&wt<=0.1) return "SmEnv_0.1";
+  if(l<=33&&w<=23&&h<=2.5&&wt<=0.5) return wt<=0.1?"StdEnv_0.1":(wt<=0.2?"StdEnv_0.2":"StdEnv_0.5");
+  if(l<=33&&w<=23&&h<=5&&wt<=1) return "LgEnv_1";
+  if(l<=45&&w<=34&&h<=26&&wt<=12){
+    const caps=[[0.25,"Parcel_0.25"],[0.5,"Parcel_0.5"],[1,"Parcel_1"],[1.5,"Parcel_1.5"],[2,"Parcel_2"],[3,"Parcel_3"],[4,"Parcel_4"],[5,"Parcel_5"],[6,"Parcel_6"],[7,"Parcel_7"],[8,"Parcel_8"],[9,"Parcel_9"],[10,"Parcel_10"],[11,"Parcel_11"],[12,"Parcel_12"]];
+    for(const [c,k] of caps){ if(wt<=c) return k; }
+  }
+  return null;
+}
+function fbaFee(tier,price){
+  for(const r of FBA){ if(r[0]===tier) return price<=25?r[1]:(price<=50?r[2]:r[3]); }
+  return NaN;
+}
+function removalFee(wt,a){ return wt<=0.25?a.rem1:(wt<=1?a.rem2:(wt<=2?a.rem3:a.rem4)); }
+function calc(p,s,Q,a,o){
+  o=o||{}; a=a||ASSUMP;
+  const vr=(o.vatReg!=null)?o.vatReg:a.vat_reg;
+  const tierMult=o.tierMult==null?1:o.tierMult;
+  const buyLoc=(o.buy!=null?o.buy:p.buy)*s.buy_f*tierMult;
+  const listP=o.price!=null?o.price:p.P;
+  const P=listP*s.price_f;
+  const buyAED=p.cur==="INR"?buyLoc/a.fx_inr:buyLoc*a.usd_aed;
+  const plpack=p.plpack*a.pl_pack*a.usd_aed;
+  const india=p.route==="India";
+  const goods=Q*(buyAED+plpack);
+  const inland=goods*(india?a.india_inland:a.cn_inland);
+  const agent=india?0:goods*a.cn_agent;
+  const unitcuft=p.L*p.W*p.H/28316.84, unitcbm=p.L*p.W*p.H/1e6;
+  const kg=Q*p.wt, cbm=Q*unitcbm*a.pack_factor;
+  const airRate=india?((kg*a.vol_factor*s.share<a.air_tier_kg)?a.air_small:a.air_in):a.cn_air*a.usd_aed;
+  const air=Math.max(a.air_min/s.share,kg*a.vol_factor*airRate);
+  const airDest=s.mode==="Air"?a.air_dest/s.share:0;
+  const seaRate=india?a.sea_in:(a.cn_sea+a.cn_cfs)*a.usd_aed;
+  const sea=cbm*seaRate+a.sea_fixed/s.share;
+  const freight=s.mode==="Air"?air:sea;
+  const ins=(goods+inland+freight)*a.ins_pct;
+  const cif=goods+inland+freight+ins;
+  const drate=(india&&p.cepa===1)?a.cepa:a.duty;
+  const duty=cif*drate;
+  const impvat=(cif+duty)*a.vat*(1-vr);
+  const custFixed=(a.decl+a.kif+a.agent_fee+a.deliver_fc)/s.share;
+  const coo=(india&&p.cepa===1)?a.coo_cost/s.share:0;
+  const qc=india?0:a.cn_qc*a.usd_aed/s.share;
+  const bank=2*a.bank_fee/s.share+goods*a.fx_margin;
+  const label=Q*a.label;
+  const landed=goods+inland+agent+freight+airDest+ins+duty+impvat+custFixed+coo+qc+bank+label;
+  const lu=landed/Q;
+  const n=Q*s.sold;
+  const refpct=P<=50?p.ref_le:p.ref_gt;
+  const tier=p.tier||autoTier(p.wt,p.L,p.W,p.H);
+  const fba=fbaFee(tier,P);
+  const revUnit=P/(1+a.vat*vr);
+  const kept=n*(1-s.ret);
+  const revenue=kept*revUnit;
+  const referral=kept*P*refpct;
+  const fbaTot=n*fba;
+  const admin=n*s.ret*Math.min(a.admin_cap,a.admin_pct*P*refpct);
+  const storageSold=n*unitcuft*a.storage*s.store;
+  const U=Q-n;
+  const unsoldStorage=U*unitcuft*a.storage*s.unsold;
+  const m=s.unsold;
+  const ltsf=U*unitcuft*(a.ltsf1*Math.max(0,Math.min(m,12)-9)+a.ltsf2*Math.max(0,m-12));
+  const removal=m>0?U*removalFee(p.wt,a):0;
+  const vatFees=(referral+fbaTot+admin+storageSold+unsoldStorage+ltsf+removal)*a.vat*(1-vr);
+  const ads=s.acos*n*revUnit;
+  const consumed=lu*(n*(1-s.ret)+n*s.ret*(1-s.resell)+U*(1-s.salvage));
+  const amazonCosts=referral+fbaTot+admin+storageSold+unsoldStorage+ltsf+removal+vatFees+ads;
+  const proceeds=revenue-amazonCosts;
+  const net=proceeds-consumed;
+  return {P,buyAED,goods,inland,agent,kg,cbm,freight,airDest,ins,cif,duty,impvat,custFixed,coo,qc,bank,label,landed,lu,n,fba,refpct,revenue,referral,fbaTot,admin,storageSold,unsoldStorage,ltsf,removal,vatFees,ads,consumed,amazonCosts,proceeds,net,
+    netPerUnit:n?net/n:0, margin:n?net/(n*P):0, roi:net/landed, unitcuft, tier};
+}
+
+
+const PRESETS=[{"id": "P1", "name": "Copper tongue scraper 2-pack + pouch", "route": "India", "P": 34.99, "buy": 85, "cur": "INR", "wt": 0.08, "L": 18.5, "W": 5.5, "H": 1.5, "ref_le": 0.08, "ref_gt": 0.15, "cepa": 0, "plpack": 0, "qty": [100, 600, 100, 100], "btier": [1, 1, 1, 1]}, {"id": "P2", "name": "Handmade cotton-rag paper A6, 25 sheets", "route": "India", "P": 47.5, "buy": 120, "cur": "INR", "wt": 0.145, "L": 15.2, "W": 10.2, "H": 2.5, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 0, "qty": [80, 400, 80, 80], "btier": [1, 1, 1, 1]}, {"id": "P3", "name": "Cotton waffle kitchen towels, 3-pack", "route": "India", "P": 49.99, "buy": 164, "cur": "INR", "wt": 0.28, "L": 30, "W": 20, "H": 6, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 0, "qty": [100, 500, 100, 100], "btier": [1, 1, 1, 1]}, {"id": "P4", "name": "Copper water bottle 1 L (AED 60-200 alternative)", "route": "India", "P": 79.99, "buy": 450, "cur": "INR", "wt": 0.4, "L": 8, "W": 8, "H": 27, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 0, "qty": [60, 300, 60, 60], "btier": [1, 1, 1, 1]}, {"id": "C1", "name": "Folding magnetic wooden chess set 15 in (China, private label)", "route": "China", "P": 62.99, "buy": 8.5, "cur": "USD", "wt": 1.37, "L": 40, "W": 20, "H": 6, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [100, 500, 100, 100], "btier": [1, 0.77, 1, 1]}, {"id": "C2", "name": "No-drill under-desk cable tray, steel mesh (China, private label)", "route": "China", "P": 49.99, "buy": 4.99, "cur": "USD", "wt": 0.7, "L": 40, "W": 13, "H": 8, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [100, 1000, 100, 100], "btier": [1, 0.8, 1, 1]}, {"id": "C3", "name": "Stainless steel cat water fountain 2L (China, private label)", "route": "China", "P": 87.99, "buy": 15.3, "cur": "USD", "wt": 0.75, "L": 12.4, "W": 18.5, "H": 18.5, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [60, 300, 60, 60], "btier": [1, 1, 1, 1]}, {"id": "C5", "name": "Vacuum storage bags 6-pack with hand pump (China, private label)", "route": "China", "P": 33.99, "buy": 3.2, "cur": "USD", "wt": 0.4, "L": 31, "W": 25, "H": 6, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [150, 1000, 150, 150], "btier": [1, 0.95, 1, 1]}, {"id": "C6", "name": "Insulated stainless kids bottle 500 ml (China, private label)", "route": "China", "P": 41.99, "buy": 2.1, "cur": "USD", "wt": 0.34, "L": 7.5, "W": 7.5, "H": 21, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [150, 1000, 150, 150], "btier": [1, 0.86, 1, 1]}, {"id": "C4", "name": "Foldable aluminium laptop stand (China) - REJECT test", "route": "China", "P": 20.6, "buy": 9.4, "cur": "USD", "wt": 0.45, "L": 25, "W": 20, "H": 2.5, "ref_le": 0.15, "ref_gt": 0.15, "cepa": 0, "plpack": 1, "qty": [100, 500, 100, 100], "btier": [1, 1, 1, 1]}];
+
+</script>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=(x,a,b)=>Math.min(b==null?1:b,Math.max(a==null?0:a,x));
+const ease=t=>1-Math.pow(1-t,3);
+function fmt(x,d){d=d==null?2:d;return x.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d})}
+function tween(el,to,dec,pre,suf,dur){
+  pre=pre||'';suf=suf||'';const from=el._v||0;el._v=to;
+  if(el._raf)cancelAnimationFrame(el._raf);
+  if(RM||from===to){el.textContent=pre+fmt(to,dec)+suf;return}
+  const t0=performance.now();dur=dur||800;
+  (function f(n){const k=clamp((n-t0)/dur);el.textContent=pre+fmt(from+(to-from)*ease(k),dec)+suf;if(k<1)el._raf=requestAnimationFrame(f)})(t0);
+}
+/* reveal on view */
+const seen=new WeakSet();
+const io=new IntersectionObserver(es=>{es.forEach(e=>{
+  if(e.isIntersecting&&!seen.has(e.target)){seen.add(e.target);e.target.classList.add('in');
+    if(e.target.classList.contains('cnt'))tween(e.target,+e.target.dataset.to,+e.target.dataset.dec||0,'','',1400);
+    if(e.target._onin)e.target._onin();
+  }})},{threshold:.2});
+function watch(sel,root){(root||document).querySelectorAll(sel).forEach(e=>io.observe(e))}
+
+/* ---------- pinned scenes ---------- */
+const scenes=[];
+function pinScene(id,fn){
+  const el=$(id),st={el,vis:false,p:-1,fn};
+  new IntersectionObserver(es=>{st.vis=es[0].isIntersecting;if(st.vis)tick()},{rootMargin:'200px'}).observe(el);
+  scenes.push(st);fn(0);return st;
+}
+function mkCaps(capEl,sdEl,caps){
+  capEl.innerHTML=caps.map(c=>'<div class="c"><h3>'+c.h+'</h3><p>'+c.p+'</p></div>').join('');
+  sdEl.innerHTML=caps.map(()=>'<i></i>').join('');
+  const cs=capEl.children,ds=sdEl.children;
+  return function(p){
+    let k=0;caps.forEach((c,i)=>{if(p>=c.at)k=i});
+    for(let i=0;i<cs.length;i++){cs[i].classList.toggle('on',i===k);
+      const a=caps[i].at,b=i+1<caps.length?caps[i+1].at:1;ds[i].style.setProperty('--f',clamp((p-a)/(b-a)))}
+  };
+}
+
+/* route */
+(function(){
+  const svg=$('routeSvg');
+  const els=[...svg.querySelectorAll('[data-a]')].filter(e=>!e.classList.contains('pc'));
+  els.forEach(e=>{if(e.tagName==='path'&&!e.classList.contains('d')){e._len=e.getTotalLength();e.style.strokeDasharray=e._len;e.style.strokeDashoffset=e._len}});
+  const pcs=[...svg.querySelectorAll('.pc')].map(c=>({c,path:$(c.dataset.path),a:+c.dataset.a,b:+c.dataset.b}));
+  pcs.forEach(o=>o.len=o.path.getTotalLength());
+  const caps=mkCaps($('capRoute'),$('sdRoute'),[
+    {at:0,h:'The goods',p:'Goods start in India or China. India duty is 0% with a CEPA certificate, otherwise 5%. China is 5%.'},
+    {at:.12,h:'Air or sea',p:'Air is the test route: about 8 weeks to first cash, about AED 40 a kg under 30 kg. Sea LCL carries bigger batches, about AED 900 a cbm from India.'},
+    {at:.33,h:'UAE customs',p:'Every shipment is a mainland import. Duty 5% and import VAT 5%, about AED 560 a shipment, paid at the border before any sale. Air adds AED 500 of airport charges.'},
+    {at:.5,h:'The free zone condition',p:'ZENVEX is a Sharjah free zone company and fulfilment centres are on the mainland. One written answer from Shams and Sharjah Customs, or Engine 2 stops.'},
+    {at:.62,h:'Where the stock sits',p:'Amazon FBA: use it for the test. Noon FBN: parked until its inbound rules are read. A 3PL holds one stock for every sales site: AED 85 a cbm a month, AED 29 a delivery.'},
+    {at:.84,h:'Engine 1 skips all of it',p:'B2B goods go from clearance straight to the buyer against a purchase order. No warehouse, no marketplace fees.'},
+    {at:.93,h:'Money comes back',p:'Amazon pays every 14 days. B2B buyers pay a 30 to 50% deposit with the PO and the balance 30 days after delivery.'}
+  ]);
+  pinScene('pinRoute',function(p){
+    els.forEach(e=>{
+      const a=+e.dataset.a,b=+e.dataset.b,t=clamp((p-a)/(b-a));
+      if(e._len){e.style.strokeDashoffset=e._len*(1-t);e.style.opacity=t>0?1:0}
+      else{e.style.opacity=t;if(e.tagName==='g'&&!RM)e.style.transform='translateY('+((1-t)*8)+'px)'}
+    });
+    pcs.forEach(o=>{const t=(p-o.a)/(o.b-o.a);
+      if(t>0&&t<1){const pt=o.path.getPointAtLength(o.len*ease(t));o.c.setAttribute('cx',pt.x);o.c.setAttribute('cy',pt.y);o.c.setAttribute('opacity',1)}
+      else o.c.setAttribute('opacity',0)});
+    caps(p);
+  });
+})();
+
+/* ---------- cost stack ---------- */
+const COL={refund:'#9aa5b8',prod:'#0f1a2c',frt:'#2f6fdb',duty:'#6f8fc9',clr:'#a9c0ea',ref:'#FF6B2C',fba:'#ff9a6b',ads:'#ffc7a8',oth:'#d9b38c',profit:'#1f9d62',loss:'#d64545'};
+const LAB={refund:'Refunded orders',prod:'Product cost',frt:'Freight',duty:'Duty and import VAT',clr:'Clearance, QC, bank, labels',ref:'Referral fee',fba:'FBA fee',ads:'Ads',oth:'Storage, VAT on fees, removal',profit:'Net profit'};
+function segsOf(r){
+  const per=r.n||1,share=r.consumed/r.landed;
+  return {refund:r.P-r.revenue/per,prod:(r.goods+r.inland+r.agent)*share/per,frt:(r.freight+r.ins)*share/per,duty:(r.duty+r.impvat)*share/per,
+    clr:(r.custFixed+r.coo+r.qc+r.bank+r.label)*share/per,ref:r.referral/per,fba:r.fbaTot/per,ads:r.ads/per,
+    oth:(r.admin+r.storageSold+r.unsoldStorage+r.ltsf+r.removal+r.vatFees)/per,profit:r.net/per};
+}
+function runPreset(id,i){const p=PRESETS.find(x=>x.id===id);return calc(p,SCEN[i],p.qty[i],ASSUMP,{tierMult:p.btier[i]})}
+const COSTSC=[{n:'Air test',i:0},{n:'Air + ads',i:3},{n:'Sea',i:1}];
+const costRes=COSTSC.map(s=>runPreset('P1',s.i));
+(function(){
+  let cIdx=0,cP=0,capUpd=null,rows=[],S=null,scale=100,order=['prod','frt','duty','clr','ref','fba','ads','oth','refund'];
+  const N=11,F=.9;
+  const chipsEl=$('cChips');
+  chipsEl.className='chips';
+  chipsEl.innerHTML=COSTSC.map((s,k)=>'<button class="chip" data-k="'+k+'">'+s.n+'<small class="num">'+fmt(costRes[k].margin*100,1)+'%</small></button>').join('');
+  function build(){
+    const r=costRes[cIdx];S=segsOf(r);const P=r.P;
+    const cost=order.reduce((a,k)=>a+S[k],0);scale=Math.max(P,cost);
+    $('cPrice').textContent=fmt(P);
+    [...chipsEl.children].forEach((b,k)=>b.classList.toggle('on',k===cIdx));
+    const wf=$('wf');wf.style.setProperty('--mk',(P/scale*100)+'%');
+    let h='<div class="wfr"><div class="l"><b>Customer pays</b></div><div class="tk"><div class="bb" style="left:0;background:#0f1a2c"></div></div><div class="v num"></div></div>';
+    order.forEach(k=>{h+='<div class="wfr"><div class="l">'+LAB[k]+'</div><div class="tk"><div class="bb" style="background:'+COL[k]+'"></div></div><div class="v num"></div></div>'});
+    h+='<div class="wfr net"><div class="l"></div><div class="tk"><div class="bb"></div></div><div class="v num"></div></div>';
+    wf.innerHTML=h;rows=[...wf.children];
+    const sum=ks=>ks.reduce((a,k)=>a+S[k],0),pc=v=>fmt(v/P*100,0)+'%';
+    const g1=sum(['prod','frt','duty','clr']),g2=S.ref+S.fba,g3=S.ads+S.oth+S.refund;
+    const m=r.margin*100;
+    capUpd=mkCaps($('capCost'),$('sdCost'),[
+      {at:0,h:'The sale',p:'A customer pays AED '+fmt(P)+'. Each bar is a piece of it, in the order the cash leaves.'},
+      {at:1*F/N,h:'Getting it here',p:'Product, freight, duty, import VAT and clearance cost AED '+fmt(g1)+' per unit, '+pc(g1)+' of the sale.'},
+      {at:5*F/N,h:'Amazon takes its cut',p:'Referral fee plus the fixed FBA fee: AED '+fmt(g2)+', '+pc(g2)+' of the sale, before ads.'},
+      {at:7*F/N,h:'Ads, storage and refunds',p:'AED '+fmt(g3)+' more, '+pc(g3)+' of the sale. Launch ads at 35% of sales are what turn this case red.'},
+      {at:10*F/N,h:r.net>=0?'What is left':'What is lost',p:'Net '+(r.net>=0?'profit':'loss')+' AED '+fmt(Math.abs(S.profit))+' per unit, '+fmt(m,1)+'% net margin. The rule is 20% or more.'}
+    ]);
+    paint(cP);
+  }
+  function paint(p){
+    cP=p;const r=costRes[cIdx],P=r.P;let cum=0;
+    const tc=p/F*N;
+    rows.forEach((row,i)=>{
+      const t=clamp(tc-i),bb=row.querySelector('.bb'),v=row.querySelector('.v');
+      row.classList.toggle('on',t>0);
+      let val,left,w,col,txt;
+      if(i===0){val=P;left=0;w=P/scale*100;txt=fmt(P*t)}
+      else if(i<N-1){const k=order[i-1];val=S[k];left=cum/scale*100;w=Math.max(0,val)/scale*100;cum+=Math.max(0,val);txt=fmt(val*t)+'<small style="color:#6c7890;font-weight:400"> '+fmt(val/P*100,0)+'%</small>'}
+      else{val=S.profit;col=val>=0?COL.profit:COL.loss;
+        if(val>=0){left=cum/scale*100;w=val/scale*100}else{left=P/scale*100;w=(cum-P)/scale*100}
+        row.querySelector('.l').textContent=val>=0?'Net profit':'Net loss';
+        row.querySelector('.l').style.color=col;v.style.color=col;bb.style.background=col;
+        txt=(val<0?'-':'')+fmt(Math.abs(val)*t)+'<small style="font-weight:400"> '+fmt(val/P*100,0)+'%</small>'}
+      bb.style.left=left+'%';bb.style.width=(w*ease(t))+'%';v.innerHTML=t>0?txt:'';
+    });
+    capUpd(p);
+  }
+  chipsEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cIdx=+b.dataset.k;build()});
+  build();
+  const st=pinScene('pinCost',paint);
+  window.__costBuild=build;
+})();
+
+/* ---------- gate rows ---------- */
+function gateHTML(o,i){
+  const lo=-20,hi=40,z=(0-lo)/(hi-lo)*100;
+  let bar='';
+  if(o.v!=null){const w=Math.abs(o.v)/(hi-lo)*100,l=o.v>=0?z:z-w;
+    bar='<div class="mbar"><i style="left:'+l+'%;--w:'+w+'%;background:'+(o.cls==='g'?'#35c07f':o.cls==='a'?'#e0a526':'#e55d5d')+'"></i><u style="left:'+((o.thr-lo)/(hi-lo)*100)+'%"></u></div>'}
+  return '<div class="gate '+o.cls+' rv" style="--i:'+i+'"><div class="lamp"></div><div class="tt"><b>'+o.t+'</b><small>'+o.s+'</small>'+bar+'</div><div class="pc num">'+(o.v==null?'n/a':(o.v>0?'':'')+fmt(o.v,1)+'%')+'</div></div>';
+}
+$('gl1').innerHTML=[
+ {t:'L1 115 mm metal cutting disc',s:'Clears 13% at the public price',v:32,cls:'g',thr:13},
+ {t:'L2 Nitrile-coated grip gloves',s:'Marginal. Needs 12% above the public price',v:3,cls:'a',thr:13},
+ {t:'L3 Basic hi-vis vest',s:'Loses money. Needs 38% above the public price',v:-20,cls:'r',thr:13},
+ {t:'L4 Plain cotton boiler suit',s:'Loses money. Needs 33% above the public price',v:-16,cls:'r',thr:13},
+ {t:'L5 Coir erosion-control geotextile',s:'No public price matched. First line to drop without a real project',v:null,cls:'n',thr:13}
+].map(gateHTML).join('');
+const m2=costRes;
+const pM=runPreset('P1',0),pL=runPreset('P1',3),pS=runPreset('P1',1);
+$('gl2').innerHTML=[
+ {t:'By air, test batch',s:'Fails the 20% rule by design. It buys learning, not profit',v:+(pM.margin*100).toFixed(1),cls:'r',thr:20},
+ {t:'By air, with launch ads (35% for 60 days)',s:'Loses money on the first batch',v:+(pL.margin*100).toFixed(1),cls:'r',thr:20},
+ {t:'By sea, on paper',s:'Passes only with three gates open: category, quote, test report',v:+(pS.margin*100).toFixed(1),cls:'g',thr:20}
+].map(gateHTML).join('');
+watch('.gate');
+
+/* ---------- engine 1 cases ---------- */
+(function(){
+  const D={2:{s:22151,n:1683,c:29128},4:{s:40737,n:3430,c:53698},8:{s:77884,n:6921,c:102803}};
+  const seg=$('buyerSeg');
+  seg.innerHTML=[2,4,8].map(k=>'<button data-k="'+k+'"'+(k===4?' class="on"':'')+'>'+k+' buyers per line</button>').join('');
+  $('cases1').innerHTML='<div><div class="k">Sales a month</div><div class="n num" id="k1">AED 0</div></div><div><div class="k">Net profit a month</div><div class="n o num" id="k2">AED 0</div></div><div style="grid-column:1/-1"><div class="k">Working capital needed</div><div class="n num" id="k3">AED 0</div></div>';
+  let cur=4,live=false;
+  function show(k){const d=D[k];tween($('k1'),d.s,0,'AED ');tween($('k2'),d.n,0,'AED ');tween($('k3'),d.c,0,'AED ')}
+  seg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cur=+b.dataset.k;[...seg.children].forEach(x=>x.classList.toggle('on',x===b));show(cur)});
+  const c=$('cases1');c._onin=()=>show(cur);io.observe(c);
+})();
+
+/* vertical timeline scrub + chapters + progress */
+const tl=$('tl1'),tlSteps=[...tl.querySelectorAll('.st')],tlI=tl.querySelector('.ln i');
+const secs=[...document.querySelectorAll('section.ch')];
+const hud=$('hud'),hn=$('hn'),ht=$('ht'),bar=$('bar'),dots=$('dots');
+dots.innerHTML=secs.map((s,i)=>'<a href="#'+s.id+'" aria-label="'+s.dataset.t+'"></a>').join('');
+const dEls=[...dots.children];
+let lastCh=-1;
+function onScroll(){
+  const y=scrollY,H=document.documentElement.scrollHeight-innerHeight;
+  bar.style.transform='scaleX('+(H>0?y/H:0)+')';
+  hud.classList.toggle('on',y>240);
+  let ci=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<=innerHeight*.45)ci=i});
+  if(ci!==lastCh){lastCh=ci;hn.textContent=String(ci+1).padStart(2,'0');ht.textContent=secs[ci].dataset.t;dEls.forEach((d,i)=>d.classList.toggle('on',i===ci))}
+  const r=tl.getBoundingClientRect();
+  tlI.style.setProperty('--h',(clamp((innerHeight*.72-r.top)/r.height)*100)+'%');
+  tlSteps.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.78)s.classList.add('in')});
+  scenes.forEach(st=>{if(!st.vis)return;const r=st.el.getBoundingClientRect();
+    const p=clamp(-r.top/(r.height-innerHeight));
+    if(Math.abs(p-st.p)>.0004){st.p=p;st.fn(p)}});
+}
+let raf=0;function tick(){if(raf)return;raf=requestAnimationFrame(()=>{raf=0;onScroll()})}
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);
+
+/* ---------- engine 2 cash chart ---------- */
+(function(){
+  const cash=[-5783,-7992,-7992,-7648,-6958,-6097,-5235,-4546,-4546,-4546];
+  const X0=44,X1=340,Y0=28,Y1=190,minV=-9000;
+  const x=i=>X0+(X1-X0)*i/9,y=v=>Y0+(Y1-Y0)*(v/minV);
+  let s='';
+  [0,-3000,-6000,-9000].forEach(v=>{s+='<line x1="'+X0+'" x2="'+X1+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#2b3f60" stroke-width="1"'+(v===0?' stroke-dasharray="3 3"':'')+'/><text x="'+(X0-6)+'" y="'+(y(v)+4)+'" text-anchor="end">'+(v===0?'0':fmt(v,0))+'</text>'});
+  cash.forEach((v,i)=>{s+='<text x="'+x(i)+'" y="212" text-anchor="middle">M'+i+'</text>'});
+  const d=cash.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
+  s+='<path id="cashLine" d="'+d+'" fill="none" stroke="#FF6B2C" stroke-width="3" stroke-linejoin="round"/>';
+  s+='<g id="cashDots">'+cash.map((v,i)=>'<circle cx="'+x(i)+'" cy="'+y(v)+'" r="3.5" fill="#0f1a2c" stroke="#FF6B2C" stroke-width="2"/>').join('')+'</g>';
+  s+='<g id="cashLab" opacity="0"><text x="'+x(1)+'" y="'+(y(-7992)+20)+'" text-anchor="middle" style="fill:#ff8a8a;font-weight:700">peak -7,992</text><text x="'+(x(9)-2)+'" y="'+(y(-4546)-12)+'" text-anchor="end" style="fill:#e9eef7;font-weight:700">M9: -4,546</text></g>';
+  const c=$('cashChart');c.innerHTML=s;
+  const ln=$('cashLine'),L=ln.getTotalLength();ln.style.strokeDasharray=L;ln.style.strokeDashoffset=RM?0:L;
+  $('cashDots').style.opacity=RM?1:0;$('cashDots').style.transition='opacity .6s 1.6s';$('cashLab').style.transition='opacity .6s 1.8s';
+  c._onin=()=>{ln.style.transition='stroke-dashoffset 2.2s cubic-bezier(.4,.1,.2,1)';ln.style.strokeDashoffset=0;$('cashDots').style.opacity=1;$('cashLab').setAttribute('opacity',1);$('cashLab').style.opacity=1};
+  if(RM){$('cashLab').setAttribute('opacity',1)}
+  io.observe(c);
+})();
+
+/* ---------- products ---------- */
+(function(){
+  const P=[
+   ['Pull-up assist bands, set of 5',30.1,16.4,'China',90,24.50,27.10,200,4900],
+   ['Cotton muslin swaddles, 3 pack',27.6,22.4,'India',95,28.20,26.24,150,4230],
+   ['Packing cubes, 7 piece',27.4,23.1,'China',86,25.31,23.60,200,5063],
+   ['Microfiber cleaning cloths, 12 pack',26.9,17.0,'China',62,16.60,16.69,400,6640],
+   ['Lifting straps with D-ring, pair',25.5,26.1,'China',69,20.41,17.59,300,6123],
+   ['Microfiber car drying towel, 2 pack',24.8,4.8,'China',69,20.33,17.14,300,6100],
+   ['Pruning secateurs, 2 piece',23.2,11.6,'China',60,18.05,13.90,200,3611]];
+  const R=[['Cotton kitchen towels 40x70, 6 pack',18.7],['Cotton face towels 33x33 cm, 12 pack',18.4],['Blank canvas panels 20x25 cm, 15 pack',12.0],['Acacia chopping boards, set of 3',11.4],['Linen-look shower curtain 180x180',6.2],['Foldable wardrobe organiser bins, 6 pack',4.5],['Padded memory foam prayer mat',0.6],['Hotel cotton duvet cover set, 3 pc',-6.1],['Waterproof terry mattress protector, queen',-10.2],['Cotton rope storage basket, large',-15.3],['Velvet non-slip hangers, 100 pack',-19.5]];
+  $('rejL').innerHTML=R.map(r=>'<li><span>'+r[0]+'</span><b style="color:'+(r[1]>=0?'#f2c24f':'#ff8a8a')+'">'+fmt(r[1],1)+'%</b></li>').join('');
+  const pb=$('pb');let mode='sea';
+  pb.innerHTML=P.map((p,i)=>'<button class="pr" style="--i:'+i+'" data-i="'+i+'"><div class="top"><span>'+(i+1)+'. '+p[0]+'</span><b class="num"></b></div><div class="tr"><i></i><u style="left:'+(25/35*100)+'%"></u></div><div class="pdet">Sells for AED '+p[4]+'. Buy from '+p[3]+'. Landed by sea AED '+fmt(p[5])+'. Profit AED '+fmt(p[6])+' a unit by sea. Test order '+p[7]+' units, about AED '+fmt(p[8],0)+' of cash.</div></button>').join('');
+  const prs=[...pb.children];
+  function paint(on){
+    prs.forEach((el,i)=>{const v=P[i][mode==='sea'?1:2];
+      const col=v>=25?'#35c07f':v>=20?'#e0a526':'#e55d5d';
+      const f=el.querySelector('i');f.style.background=col;f.style.width=on?(clamp(v/35)*100)+'%':'0%';
+      el.querySelector('b').textContent=fmt(v,1)+'%';el.querySelector('b').style.color=col});
+  }
+  let shown=false;pb._onin=()=>{shown=true;paint(true)};io.observe(pb);paint(false);
+  pb.addEventListener('click',e=>{const b=e.target.closest('.pr');if(b)b.classList.toggle('open')});
+  $('modeSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;mode=b.dataset.m;[...$('modeSeg').children].forEach(x=>x.classList.toggle('on',x===b));paint(shown)});
+})();
+
+/* ---------- risks ---------- */
+(function(){
+  const fz=[$('fzq'),$('fz1'),$('fz2')];
+  const seg=$('fzSeg');
+  function set(v){
+    [...seg.children].forEach(b=>b.classList.toggle('on',b.dataset.v===String(v)));
+    const q=$('fzq'),e2=$('fz2'),e1=$('fz1');
+    q.className='fzn full '+(v?'g':'r');
+    e2.className='fzn '+(v?'g':'r');
+    $('fz2t').textContent=v?'Go on, with quotes in hand. Standard FBA to a mainland FC, ZENVEX or the forwarder as importer.':'Engine 2 stops. No money moves. Add a mainland route first.';
+    e1.className='fzn g';
+    q.querySelector('span').textContent=v?'Written answer: yes. Cost of the answer was one phone call.':'Written answer: no. Alternative: a mainland distributor invoice or a mainland licence.';
+  }
+  seg.addEventListener('click',e=>{const b=e.target.closest('button');if(b)set(+b.dataset.v)});
+  const R=[
+   ['Free zone to mainland route not allowed','Unknown / very high','#e55d5d','Get a written answer from Shams and Sharjah Customs before ordering. Engine 1 is not affected if the buyer or the clearing agent is the importer.'],
+   ['Account suspension or listing removal','Low to medium / very high','#e55d5d','Keep supplier invoices, no brand names, no health claims, correct category, no review manipulation.'],
+   ['Stock stuck: slow sell-through','Medium / high','#FF6B2C','First order under AED 1,500 per SKU. 60-day gate. Remove stock before day 271 to avoid the AED 8 per cu ft surcharge. Removal fee AED 1.60 to 2.20 per unit.'],
+   ['B2B bad debt and spec mismatch (Engine 1)','Medium / high','#FF6B2C','Deposit 30 to 50%, credit cap of one month of sales, redacted RFQ and exact spec before quoting, 1.5% bad debt provision.'],
+   ['Price war from China sellers','High / high','#FF6B2C','Pick light items with a story and a review base. Kill any product with a floor below AED 25.'],
+   ['IP and brand','Medium / high','#FF6B2C','Do not copy brands or logos. Use our own brand name and check the trademark before private label.'],
+   ['Powered or food-contact items','Medium / high','#FF6B2C','Skip powered products until conformity is confirmed. Test reports for copper and steel.'],
+   ['Customs hold or wrong HS code','Medium / medium','#e0a526','The agent files and gives a written HS code. Arabic labels where required. Fine AED 500 for amendments, AED 5 a day for late documents.'],
+   ['Fee changes','Certain / medium','#e0a526','Fees changed 15 Jan 2026 and change again 1 Dec 2026. Recheck before each order.'],
+   ['FX and freight spikes','Medium / medium','#e0a526','Sea rates disagree by 3x across sources. Get live quotes and hold a 10% buffer.'],
+   ['High returns','Medium / medium','#e0a526','Good packaging, accurate listing. The model has 5%, 8% and 15%. A refund costs the FBA fee plus AED 15 or 20% of referral.'],
+   ['Working capital and payout delay','Medium / medium','#e0a526','Peak cash about AED 8,000 for the Amazon test. Amazon pays every 14 days. Engine 1: deposits and a credit cap per buyer.']];
+  $('risks').innerHTML=R.map(r=>'<details><summary><span><b>'+r[0]+'</b><small>Likelihood / impact: '+r[1]+'</small></span><span class="lv" style="background:'+r[2]+'"></span></summary><p>'+r[3]+'</p></details>').join('');
+  set(1);
+  $('fzSeg').querySelectorAll('button')[0].classList.add('on');
+})();
+
+/* ---------- gantt ---------- */
+(function(){
+  const C={o:'#FF6B2C',p:'#3b78e0',a:'#1f9d62',j:'#c9d3e4'};
+  const G=[
+   ['Licence amendment: add General Trading',0,3,'j',1],
+   ['Written free zone answer (Shams, Sharjah Customs)',0,2,'p',1],
+   ['Customs code and 3 clearing agent quotes',0,3,'p',0],
+   ['Supplier quotes and samples (P1, P2)',0,4,'o',0],
+   ['Seller Central set-up, fee preview, category check',1,3,'a',0],
+   ['Gate check: quotes vs model, compliance, free zone answer',4,5,'j',1],
+   ['Order, deposit, production, packing in India',5,8,'o',0],
+   ['Listings, photos, A+ content, barcodes',4,8,'a',0],
+   ['Export papers, CoO, freight booking',8,9,'o',0],
+   ['Air freight and UAE customs clearance',9,10,'p',0],
+   ['Truck to FC, FBA check-in',10,11,'p',1],
+   ['Launch ads, price test, reviews',11,19,'a',0],
+   ['Engine 1: buyer RFQs, POs, 30 to 50% deposits',0,12,'p',0],
+   ['60-day review gate: scale, change or stop',17,19,'j',1],
+   ['Second batch by sea LCL (if gate passed)',19,20,'o',0]];
+  const pc=w=>w/20*100;
+  let h='<div class="gtax" style="height:60px">';
+  [1,5,9,13,17].forEach(w=>{h+='<span style="left:'+pc(w-.5)+'%;top:0">W'+w+'</span>'});
+  h+='<span class="vlab" style="left:'+pc(10)+'%;top:20px;transform:none;padding-left:4px">W11 stock buyable</span><span class="vlab" style="left:'+pc(12)+'%;top:38px;transform:none;padding-left:4px">Ramadan 8 Feb</span></div>';
+  h+='<div style="position:relative">';
+  
+  G.forEach((g,i)=>{h+='<div class="gtr"><span class="l">'+g[0]+'</span><div class="tk"><i class="vl" style="left:'+pc(10)+'%"></i><i class="vl" style="left:'+pc(12)+'%"></i><div class="b" style="left:'+pc(g[1])+'%;--w:'+pc(g[2]-g[1])+'%;background:'+C[g[3]]+';--dl:'+(i*.12)+'s"></div>'+(g[4]?'<div class="dm" style="left:'+pc(g[2])+'%;--dl:'+(i*.12)+'s"></div>':'')+'</div></div>'});
+  h+='</div>';
+  const gt=$('gt');gt.style.position='relative';gt.innerHTML=h;
+  const bs=[...gt.querySelectorAll('.b')];
+  gt._onin=()=>bs.forEach(b=>b.style.width=getComputedStyle(b).getPropertyValue('--w'));
+  io.observe(gt);
+})();
+
+/* ---------- asks ---------- */
+watch('.ask');watch('.vrow');watch('.goal');watch('.rv');watch('.cnt');
+document.querySelectorAll('.vrow').forEach(v=>{io.observe(v)});
+
+/* ---------- calculator ---------- */
+(function(){
+  const pre=$('iPre');
+  pre.innerHTML=PRESETS.filter(p=>p.route==='India').map(p=>'<option value="'+p.id+'">'+p.name+'</option>').join('');
+  const ids={buy:'iBuy',price:'iPrice',wt:'iWt',qty:'iQty',sold:'iSold',ads:'iAds'};
+  const st={mode:'Air'};
+  let preset=PRESETS[0];
+  function prm(){return preset}
+  function setDefaults(){
+    const p=preset;
+    const buy=$('iBuy');buy.min=Math.max(1,Math.round(p.buy*.2));buy.max=Math.round(p.buy*4);buy.step=1;buy.value=p.buy;
+    $('iPrice').value=p.P;$('iWt').value=p.wt;
+    $('iQty').value=p.qty[st.mode==='Air'?0:1];
+    $('iSold').value=st.mode==='Air'?100:90;$('iAds').value=st.mode==='Air'?15:12;
+  }
+  function vals(){return {buy:+$('iBuy').value,price:+$('iPrice').value,wt:+$('iWt').value,qty:+$('iQty').value,mode:st.mode,sold:+$('iSold').value,ads:+$('iAds').value}}
+  function model(v,o){
+    const p=Object.assign({},preset,{wt:v.wt});
+    const air=v.mode==='Air';
+    const s={mode:v.mode,share:air?2:4,sold:v.sold/100,ret:air?.05:.08,store:air?2:4,unsold:v.sold<100?6:0,acos:v.ads/100,resell:.7,price_f:1,buy_f:1,salvage:0};
+    return calc(p,s,v.qty,ASSUMP,Object.assign({tierMult:1,buy:v.buy,price:v.price},o||{}));
+  }
+  function bis(fn,lo,hi){for(let i=0;i<60;i++){const m=(lo+hi)/2;if(fn(m))lo=m;else hi=m}return lo}
+  const cur=preset.cur;
+  const arc=$('gArc'),tick=$('gTick');
+  const LGK=['prod','frt','duty','clr','ref','fba','ads','oth','refund','profit'];
+  const CD=Object.assign({},COL,{prod:'#e9eef7'});
+  $('lg').innerHTML=LGK.map(k=>'<span><i style="background:'+CD[k]+'"></i>'+LAB[k]+'</span>').join('');
+  let first=true;
+  function update(){
+    const v=vals();
+    const c=preset.cur;
+    $('oBuy').textContent=fmt(v.buy,0)+' '+c;$('oPrice').textContent='AED '+fmt(v.price);$('oWt').textContent=fmt(v.wt*1000,0)+' g';
+    $('oQty').textContent=fmt(v.qty,0);$('oSold').textContent=v.sold+'%';$('oAds').textContent=v.ads+'%';
+    const tier=autoTier(preset.wt===v.wt?preset.wt:v.wt,preset.L,preset.W,preset.H);
+    if(!tier){$('warn').textContent='This size or weight is oversize (over 45x34x26 cm or 12 kg). Oversize fees are not in the calculator.';return}
+    $('warn').textContent='';
+    const r=model(v);window.__last=r;
+    const m=r.margin*100;
+    tween($('rM'),m,1,'','%',500);
+    const cls=m>=20?'g':m>=10?'a':'r';
+    $('rV').className='tag '+cls;$('rV').textContent=m>=20?'Pass: 20% or more':m>=10?'Marginal: 10 to 20%':'Fail: under 10%';
+    tween($('rN'),r.netPerUnit,2,'AED ','',500);tween($('rL'),r.lu,2,'AED ','',500);
+    tween($('rB'),r.net,0,'AED ','',500);tween($('rC'),r.landed,0,'AED ','',500);
+    const f=clamp((m+20)/60);
+    arc.style.strokeDashoffset=100*(1-f);arc.style.stroke=cls==='g'?'#35c07f':cls==='a'?'#e0a526':'#e55d5d';
+    const ang=Math.PI*(1-(40/60)),cx=70,cy=76;
+    tick.setAttribute('x1',cx+Math.cos(ang)*47);tick.setAttribute('y1',cy-Math.sin(ang)*47);tick.setAttribute('x2',cx+Math.cos(ang)*65);tick.setAttribute('y2',cy-Math.sin(ang)*65);
+    // stack bar
+    const S=segsOf(r),P=r.P,tot=LGK.slice(0,9).reduce((a,k)=>a+S[k],0),sc=Math.max(P,tot);
+    let b='';LGK.forEach(k=>{const x=k==='profit'?Math.max(0,S.profit):S[k];b+='<div style="width:'+(Math.max(0,x)/sc*100)+'%;background:'+CD[k]+'"></div>'});
+    if(S.profit<0)b+='<div style="width:'+((tot-P)/sc*100)+'%;background:'+COL.loss+'"></div>';
+    $('sb').innerHTML=b;
+    // more
+    const npu=r.netPerUnit;
+    const mb=bis(x=>model(v,{buy:x}).margin>=.2,0,Math.max(1,v.buy*6));
+    const mp=(function(){let lo=1,hi=Math.max(20,v.price*6);for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(model(v,{price:mid}).margin>=.2)hi=mid;else lo=mid}return hi})();
+    $('more').innerHTML=[
+     ['Max buy price for 20%',mb<0.5?'not reachable':fmt(mb,0)+' '+c,mb<0.5?'fixed fees take too much at this price':'yours: '+fmt(v.buy,0)+' '+c],
+     ['Min sell price for 20%','AED '+fmt(mp),'yours: AED '+fmt(v.price)],
+     ['Units a month for AED '+fmt(ASSUMP.goal,0),npu>0?fmt(Math.ceil(ASSUMP.goal/npu),0):'never','from this one product'],
+     ['Freight per unit','AED '+fmt(r.freight/v.qty),fmt(r.kg,1)+' kg, '+fmt(r.cbm,2)+' cbm shipped'],
+     ['Duty and import VAT','AED '+fmt((r.duty+r.impvat)/v.qty)+' per unit','5% duty, 5% VAT'],
+     ['Amazon FBA fee','AED '+fmt(r.fba),'size band '+r.tier]
+    ].map(a=>'<div><small>'+a[0]+'</small><b class="num">'+a[1]+'</b><i>'+a[2]+'</i></div>').join('');
+  }
+  document.querySelectorAll('#ctrl input[type=range]').forEach(i=>i.addEventListener('input',update));
+  pre.addEventListener('change',()=>{preset=PRESETS.find(p=>p.id===pre.value);setDefaults();update()});
+  $('iMode').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.mode=b.dataset.m;[...$('iMode').children].forEach(x=>x.classList.toggle('on',x===b));
+    $('iQty').value=preset.qty[st.mode==='Air'?0:1];$('iSold').value=st.mode==='Air'?100:90;$('iAds').value=st.mode==='Air'?15:12;update()});
+  setDefaults();update();
+  window.ZX={
+    set:function(o){if(o.mode){st.mode=o.mode;[...$('iMode').children].forEach(x=>x.classList.toggle('on',x.dataset.m===o.mode))}
+      if(o.pre){pre.value=o.pre;preset=PRESETS.find(p=>p.id===o.pre);setDefaults()}
+      const mp={buy:'iBuy',price:'iPrice',wt:'iWt',qty:'iQty',sold:'iSold',ads:'iAds'};
+      Object.keys(mp).forEach(k=>{if(o[k]!=null){const el=$(mp[k]);if(k==='buy'){el.max=Math.max(+el.max,o[k]);el.min=Math.min(+el.min,o[k])}el.value=o[k]}});
+      update();const r=window.__last;return {margin:r.margin,net:r.net,lu:r.lu,landed:r.landed,n:r.n,perUnit:r.netPerUnit}}
+  };
+})();
+tick();
+})();
+
+</script>
+</body>
+</html>
